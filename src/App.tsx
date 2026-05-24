@@ -10,6 +10,8 @@ import Fourth from "./components/section/4";
 import Fiveth from "./components/section/5";
 import Sixth from "./components/section/6";
 import Seventh from "./components/section/7";
+import Eight from "./components/section/8";
+import Nineth from "./components/section/9";
 
 function App() {
 
@@ -39,6 +41,8 @@ function App() {
       <Fiveth />
       <Sixth />
       <Seventh />
+      <Eight />
+      <Nineth />
     </main>
   )
 }
