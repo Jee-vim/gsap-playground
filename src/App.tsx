@@ -1,22 +1,21 @@
-import First from "./components/section/1"
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
-import Second from "./components/section/2";
-import Third from "./components/section/3";
-import Fourth from "./components/section/4";
-import Fiveth from "./components/section/5";
-import Sixth from "./components/section/6";
-import Seventh from "./components/section/7";
-import Eight from "./components/section/8";
-import Nineth from "./components/section/9";
+
+import Rise from "./components/examples/Rise"
+import WaveTitles from "./components/examples/WaveTitles";
+import HorizontalScroll from "./components/examples/HorizontalScroll";
+import StaggerItems from "./components/examples/StaggerItems";
+import TimelineY from "./components/examples/TimelineY";
+import TimelineText from "./components/examples/TimelineText";
+import ZoomMarquee from "./components/examples/ZoomMarquee";
+import InteractiveMarquee from "./components/examples/InteractiveMarquee";
+import StaggerHeight from "./components/examples/StaggerHeight";
 
 function App() {
 
   gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
-
 
   // register animation that gonna be used everywhere
   gsap.registerEffect({
@@ -34,15 +33,15 @@ function App() {
 
   return (
     <main className="py-5 space-y-5">
-      <First />
-      <Second />
-      <Third />
-      <Fourth />
-      <Fiveth />
-      <Sixth />
-      <Seventh />
-      <Eight />
-      <Nineth />
+      <Rise />
+      <WaveTitles />
+      <HorizontalScroll />
+      <StaggerItems />
+      <TimelineY />
+      <TimelineText />
+      <ZoomMarquee />
+      <InteractiveMarquee />
+      <StaggerHeight />
     </main>
   )
 }

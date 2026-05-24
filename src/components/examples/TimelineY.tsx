@@ -23,7 +23,7 @@ export default function Fiveth() {
   }, { dependencies: [key] })
 
   return (
-    <div className="parent" ref={containerRef} key={key}>
+    <div className="parent h-dvh overflow-hidden" ref={containerRef} key={key}>
       <div className="left box absolute left-0 top-36" />
       <div className="right box absolute right-0 bottom-28" />
       <Rerender onClick={triggerRerender} />
