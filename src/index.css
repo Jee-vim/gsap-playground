@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --fg: #fffce4;
+  --bg: #242526;
+  --border: #e5e4e7;
+  --accent: #0ae448;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--fg);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  max-width: 1024px;
+  width: 100%;
+  margin-inline: auto;
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #7f7b77;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-accent: var(--accent);
+
+  --font-primary: var(--sans), sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  font-weight: 500;
+  color: var(--fg);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  color: var(--fg);
+}
+
+.parent {
+  @apply w-full min-h-72 relative border rounded-md
+}
+
+.box {
+  @apply size-20 bg-accent;
+}
+.round {
+  @apply size-20 bg-accent rounded-full;
+}
