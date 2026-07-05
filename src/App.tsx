@@ -12,6 +12,8 @@ import TimelineText from "./components/examples/TimelineText";
 import ZoomMarquee from "./components/examples/ZoomMarquee";
 import InteractiveMarquee from "./components/examples/InteractiveMarquee";
 import StaggerHeight from "./components/examples/StaggerHeight";
+import RoundedCarousel from "./components/examples/RoundedCarousel";
+import RoundedCarouselAuto from "./components/examples/RoundedCarouselAuto";
 
 function App() {
 
@@ -42,6 +44,8 @@ function App() {
       <ZoomMarquee />
       <InteractiveMarquee />
       <StaggerHeight />
+      <RoundedCarousel />
+      <RoundedCarouselAuto />
     </main>
   )
 }
