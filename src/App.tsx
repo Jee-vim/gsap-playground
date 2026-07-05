@@ -6,6 +6,7 @@ import { SplitText } from "gsap/SplitText";
 import Rise from "./components/examples/Rise"
 import WaveTitles from "./components/examples/WaveTitles";
 import HorizontalScroll from "./components/examples/HorizontalScroll";
+import HorizontalScrollCarousel from "./components/examples/HorizontalScrollCarousel";
 import StaggerItems from "./components/examples/StaggerItems";
 import TimelineY from "./components/examples/TimelineY";
 import TimelineText from "./components/examples/TimelineText";
@@ -38,6 +39,7 @@ function App() {
       <Rise />
       <WaveTitles />
       <HorizontalScroll />
+      <HorizontalScrollCarousel />
       <StaggerItems />
       <TimelineY />
       <TimelineText />
