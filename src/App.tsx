@@ -14,7 +14,6 @@ import ZoomMarquee from "./components/examples/ZoomMarquee";
 import InteractiveMarquee from "./components/examples/InteractiveMarquee";
 import StaggerHeight from "./components/examples/StaggerHeight";
 import RoundedCarousel from "./components/examples/RoundedCarousel";
-import RoundedCarouselAuto from "./components/examples/RoundedCarouselAuto";
 
 function App() {
 
@@ -47,7 +46,6 @@ function App() {
       <InteractiveMarquee />
       <StaggerHeight />
       <RoundedCarousel />
-      <RoundedCarouselAuto />
     </main>
   )
 }
